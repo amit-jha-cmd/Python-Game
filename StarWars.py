@@ -1,6 +1,5 @@
 """
-Name of Creator: Amit Jha
-The game is based in space and the player has to shoot down the enemy ship
+Creator: Amit Jha(devbihari)
 """
 
 import pygame 
@@ -322,7 +321,7 @@ def gameLoop():
 		
 		totalScore = str(score) #convert the integer score into string so as to be rendered 
 		
-		#to decide from where the enemy is coming from
+		#to decide from where the enemy is coming
 		if shipRand_pos_x + 80 <= statusBar_pos_x + 250:
 			pygame.draw.rect(gameDisplay, red, [statusBar_pos_x, 0, 250, 5])
 			pygame.display.update()
