@@ -28,11 +28,11 @@ gameDisplay.fill(black) #fill the screen with black
 pygame.display.update() #update the display to show changes
 
 img = pygame.image.load("spaceship.png") #load the space ship
-enemyShip_one = pygame.image.load("enemyship.png") #load the larger enemy ship
+#enemyShip_one = pygame.image.load("enemyship.png") #load the larger enemy ship
 enemyShip_two = pygame.image.load("spaceship2.png") #load the smaller enemy ship
 explosion = pygame.image.load("explosion.png") #load the explosion image
 noShip_one = pygame.image.load("noship1.png")
-noShip_two = pygame.image.load("noship2.png")
+#noShip_two = pygame.image.load("noship2.png")
 block_size = 3 #define the star size
 FPS = 60 #frames per second
 
@@ -60,7 +60,7 @@ def button_to_screen(color, hover_color, buttonx, buttony, button_width, button_
 				pygame.quit()
 				quit()
 			elif action == "Resume":
-				 print "Resume"
+				 print("Resume")
 
 def text_objects(text, color, size): #function to decide the font size
 	if size == "small":
